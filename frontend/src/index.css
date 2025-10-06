@@ -1,0 +1,233 @@
+body.dark {
+	background: #18181b;
+	color: #e5e7eb;
+}
+.dark .navbar {
+	background: linear-gradient(90deg, #18181b 60%, #0ea5e9 100%);
+}
+.dark .navbar a {
+	color: #e5e7eb;
+}
+.dark .navbar a:hover {
+	background: #0ea5e9;
+	color: #fff;
+}
+.dark form, .dark fieldset, .dark table, .dark .Header, .dark .Footer {
+	background: #23232a;
+	color: #e5e7eb;
+	border-color: #334155;
+}
+.dark th {
+	background: #334155;
+	color: #e5e7eb;
+}
+.dark tr:hover td {
+	background: #23232a;
+}
+.dark input, .dark button, .dark select, .dark textarea {
+	background: #23232a;
+	color: #e5e7eb;
+	border-color: #334155;
+}
+.dark button {
+	background: linear-gradient(90deg, #0ea5e9 60%, #38bdf8 100%);
+	color: #fff;
+}
+.dark .spinner {
+	border: 4px solid #334155;
+	border-top: 4px solid #0ea5e9;
+}
+.dark .toast {
+	background: #0ea5e9;
+	color: #fff;
+}
+.dark .toast.error {
+	background: #ef4444;
+}
+.dark .toast.success {
+	background: #22c55e;
+}
+/* Global loading spinner */
+.spinner {
+	display: inline-block;
+	width: 40px;
+	height: 40px;
+	border: 4px solid #e0e7ef;
+	border-top: 4px solid #38bdf8;
+	border-radius: 50%;
+	animation: spin 1s linear infinite;
+	margin: 1rem auto;
+}
+@keyframes spin {
+	0% { transform: rotate(0deg); }
+	100% { transform: rotate(360deg); }
+}
+
+/* Toast notification */
+.toast {
+	position: fixed;
+	top: 2rem;
+	right: 2rem;
+	background: #38bdf8;
+	color: #fff;
+	padding: 1rem 2rem;
+	border-radius: 8px;
+	box-shadow: 0 2px 12px #0002;
+	z-index: 9999;
+	font-size: 1.1rem;
+	opacity: 0.97;
+	transition: opacity 0.3s;
+}
+.toast.error {
+	background: #ef4444;
+}
+.toast.success {
+	background: #22c55e;
+}
+
+body {
+	margin: 0;
+	font-family: 'Segoe UI', 'Roboto', 'Arial', sans-serif;
+	background: #f7f9fb;
+	color: #222;
+}
+
+
+.navbar {
+	display: flex;
+	gap: 1.5rem;
+	background: linear-gradient(90deg, #1e293b 60%, #38bdf8 100%);
+	padding: 1rem 2rem;
+	align-items: center;
+	box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+	border-radius: 0 0 16px 16px;
+}
+.navbar a {
+	color: #fff;
+	text-decoration: none;
+	font-weight: 500;
+	letter-spacing: 0.5px;
+	padding: 0.5rem 1rem;
+	border-radius: 6px;
+	transition: background 0.2s, color 0.2s;
+}
+.navbar a:hover {
+	background: #fff;
+	color: #0ea5e9;
+}
+
+main, .Main {
+	min-height: 70vh;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	padding: 2rem 1rem;
+}
+
+
+form, fieldset {
+	background: #fff;
+	border-radius: 16px;
+	box-shadow: 0 2px 16px rgba(0,0,0,0.09);
+	padding: 2rem 2.5rem;
+	margin: 2rem auto;
+	max-width: 420px;
+	width: 100%;
+	border: 1px solid #e0e7ef;
+}
+
+
+input, button, select, textarea {
+	font-size: 1rem;
+	padding: 0.5rem 0.75rem;
+	border-radius: 8px;
+	border: 1px solid #cbd5e1;
+	margin-top: 0.5rem;
+	margin-bottom: 1rem;
+	width: 100%;
+	box-sizing: border-box;
+	outline: none;
+}
+
+button {
+	background: linear-gradient(90deg, #38bdf8 60%, #0ea5e9 100%);
+	color: #fff;
+	border: none;
+	cursor: pointer;
+	font-weight: 600;
+	transition: background 0.2s, box-shadow 0.2s;
+	box-shadow: 0 2px 8px rgba(56,189,248,0.08);
+}
+button:hover {
+	background: #0ea5e9;
+	box-shadow: 0 4px 16px rgba(56,189,248,0.13);
+}
+
+h1, h2, h3 {
+	color: #0f172a;
+	margin-bottom: 1rem;
+}
+
+
+table {
+	background: #fff;
+	border-radius: 12px;
+	box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+	width: 100%;
+	margin: 2rem 0;
+	border-collapse: collapse;
+	overflow: hidden;
+}
+th, td {
+	padding: 0.85rem 1.2rem;
+	border-bottom: 1px solid #e2e8f0;
+	text-align: left;
+}
+th {
+	background: #e0f2fe;
+	color: #0f172a;
+	font-weight: 600;
+	letter-spacing: 0.5px;
+}
+tr:last-child td {
+	border-bottom: none;
+}
+tr:hover td {
+	background: #f1f5f9;
+}
+
+
+.Header, .Footer {
+	background: #f1f5f9;
+	padding: 1rem 2rem;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	border-radius: 0 0 12px 12px;
+}
+.Footer {
+	justify-content: center;
+	color: #64748b;
+	font-size: 0.95rem;
+	margin-top: 2rem;
+}
+
+/* Dashboard and tracking enhancements */
+.dashboard-actions button, .dashboard-actions a {
+	margin-right: 0.5rem;
+	margin-bottom: 0.5rem;
+	min-width: 90px;
+}
+.dashboard-qr img {
+	border: 2px solid #38bdf8;
+	border-radius: 8px;
+	background: #fff;
+	padding: 4px;
+}
+.tracking-map {
+	margin-top: 1rem;
+	border-radius: 12px;
+	overflow: hidden;
+	box-shadow: 0 2px 8px #0001;
+}

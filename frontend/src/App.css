@@ -1,0 +1,33 @@
+
+/* Home Page Styles */
+
+.Header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #f5f5f5;
+}
+
+.Header div img{
+    width: 50px;
+    height: auto;
+    border-radius: 50%;
+}
+
+.Main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #f5f5f5;
+    padding: 20px;
+}
+
+.Footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #f5f5f5;
+}

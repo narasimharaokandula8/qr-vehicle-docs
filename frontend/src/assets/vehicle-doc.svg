@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <!-- Background (optional) -->
+  <circle cx="256" cy="256" r="240" fill="#F3F6FB"></circle>
+
+  <!-- Document rectangle with folded corner -->
+  <g>
+    <rect x="96" y="64" width="320" height="384" rx="24" fill="#FFFFFF" stroke="#0B74DE" stroke-width="6"></rect>
+    <polygon points="416,64 416,128 352,64" fill="#DCEBFA"></polygon>
+  </g>
+
+  <!-- QR code block (top-left inside document) -->
+  <g>
+    <rect x="120" y="96" width="80" height="80" fill="#0B2545" rx="8"></rect>
+    <rect x="132" y="108" width="20" height="20" fill="#FFFFFF"></rect>
+    <rect x="168" y="108" width="20" height="20" fill="#FFFFFF"></rect>
+    <rect x="132" y="144" width="20" height="20" fill="#FFFFFF"></rect>
+  </g>
+
+  <!-- Car silhouette (center inside document) -->
+  <g transform="translate(128,220) scale(1.2)">
+    <path d="M0 48 L12 20 H80 L100 48 H160 C168 48 176 56 176 64 V84 C176 92 168 100 160 100 H12 C4 100 -4 92 -4 84 V64 C-4 56 4 48 12 48 Z" fill="#0B74DE"></path>
+    <path d="M24 44 L44 28 H100 L118 44 Z" fill="#9FD2FF"></path>
+    <circle cx="44" cy="104" r="18" fill="#1F2D3D"></circle>
+    <circle cx="120" cy="104" r="18" fill="#1F2D3D"></circle>
+    <circle cx="44" cy="104" r="8" fill="#AFCDE9"></circle>
+    <circle cx="120" cy="104" r="8" fill="#AFCDE9"></circle>
+  </g>
+
+  <!-- Verification shield (bottom-right inside document) -->
+  <g transform="translate(280,320)">
+    <path d="M52 0 L88 14 V46 C88 68 68 86 52 96 C36 86 16 68 16 46 V14 Z" fill="#1AA760" stroke="#0F8B4F" stroke-width="2"></path>
+    <path d="M26 44 L40 58 L66 30" fill="none" stroke="#fff" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"></path>
+  </g>
+
+  <!-- Optional drop shadow under the document -->
+  <ellipse cx="256" cy="480" rx="160" ry="18" fill="#000000" opacity="0.06"></ellipse>
+</svg>

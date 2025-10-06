@@ -1,0 +1,45 @@
+{
+  "name": "qr-vehicle-docs",
+  "version": "1.0.0",
+  "description": "QR Code-Based Vehicle Document Management & Verification System",
+  "main": "setup.js",
+  "scripts": {
+    "setup": "node setup.js",
+    "dev:backend": "cd backend && npm start",
+    "dev:frontend": "cd frontend && npm run dev",
+    "build:frontend": "cd frontend && npm run build",
+    "build": "npm run build:frontend",
+    "test:backend": "cd backend && npm test",
+    "test:frontend": "cd frontend && npm test",
+    "test": "npm run test:backend && npm run test:frontend",
+    "lint:backend": "cd backend && npm run lint",
+    "lint:frontend": "cd frontend && npm run lint",
+    "lint": "npm run lint:backend && npm run lint:frontend",
+    "start": "node backend/server.js",
+    "heroku-postbuild": "npm run build:frontend"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/narasimharaokandula8/qr-vehicle-docs.git"
+  },
+  "keywords": [
+    "qr-code",
+    "vehicle-documents",
+    "document-management",
+    "verification",
+    "react",
+    "nodejs",
+    "mongodb",
+    "express"
+  ],
+  "author": "Narasimha Rao Kandula <narasimharaokandula8@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/narasimharaokandula8/qr-vehicle-docs/issues"
+  },
+  "homepage": "https://github.com/narasimharaokandula8/qr-vehicle-docs#readme",
+  "engines": {
+    "node": ">=16.0.0",
+    "npm": ">=7.0.0"
+  }
+}
